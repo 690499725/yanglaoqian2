@@ -6,7 +6,7 @@ import { getAiConfig } from '../assets/js/config.js'
 const savedConfig = JSON.parse(localStorage.getItem('apiConfig') || '{}')
 
 const service = axios.create({
-  baseURL: 'http://localhost:3001/api' || savedConfig.baseURL,
+  baseURL: 'https://iccwewaowacf.sealoshzh.site/api' || savedConfig.baseURL,
   timeout: 15000,
   headers: {
     'Content-Type': 'application/json'
