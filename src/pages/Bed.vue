@@ -369,6 +369,7 @@
 			const response = await getBeds({
 				page: currentPage.value,
 				limit: pageSize.value
+				...searchForm
 			})
 			
 			if (response.code === 200) {
