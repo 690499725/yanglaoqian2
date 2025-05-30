@@ -289,7 +289,7 @@
 					</div>
 					<div class="vr-content">
 						<!-- <iframe ref="vrIframe" :src="'/vr/index.html'" frameborder="0" class="vr-iframe"></iframe> -->
-						<iframe ref="vrIframe" :src="'public/vr/index.html'" frameborder="0" class="vr-iframe"></iframe>
+						<iframe ref="vrIframe" :src="'/vr/index.html'" frameborder="0" class="vr-iframe"></iframe>
 					</div>
 				</div>
 				
