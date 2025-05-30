@@ -368,7 +368,7 @@
 			// 获取分页数据
 			const response = await getBeds({
 				page: currentPage.value,
-				limit: pageSize.value
+				limit: pageSize.value,
 				...searchForm
 			})
 			
@@ -386,8 +386,6 @@
 				ElMessage.error('您没有查看床位信息的权限')
 			} else if (error.response?.status === 404) {
 				ElMessage.error('未找到相关床位信息')
-			} else if (error.code === 'ECONNABORTED') {
-				ElMessage.error('网络连接超时，请检查网络后重试')
 			} else {
 				ElMessage.error('获取床位信息失败，请稍后重试')
 			}
